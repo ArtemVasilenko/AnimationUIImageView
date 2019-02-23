@@ -18,24 +18,25 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="back" translatesAutoresizingMaskIntoConstraints="NO" id="DgC-MH-kad">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="back" translatesAutoresizingMaskIntoConstraints="NO" id="DgC-MH-kad">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Uoi-i4-rMP">
-                                <rect key="frame" x="16" y="20" width="343" height="297"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" highlighted="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Uoi-i4-rMP">
+                                <rect key="frame" x="16" y="20" width="343" height="192"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="297" id="Dni-fD-gpP"/>
-                                    <constraint firstAttribute="width" constant="343" id="bUf-Yf-CdD"/>
+                                    <constraint firstAttribute="height" constant="192" id="9Iy-fl-nn0"/>
+                                    <constraint firstAttribute="width" constant="343" id="PYl-im-qrK"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="21" translatesAutoresizingMaskIntoConstraints="NO" id="Ajd-gs-tNE">
-                                <rect key="frame" x="16" y="323" width="343" height="20.5"/>
+                                <rect key="frame" x="16" y="220" width="343" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lR5-6F-OD2">
-                                <rect key="frame" x="142" y="433" width="90" height="62"/>
+                                <rect key="frame" x="142" y="248" width="90" height="30"/>
                                 <color key="backgroundColor" red="0.11763153225183487" green="0.11765826493501663" blue="0.11762585490942001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Click me, bro">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -46,20 +47,15 @@
                             </button>
                         </subviews>
                         <constraints>
-                            <constraint firstItem="DgC-MH-kad" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="4xD-Io-ct8"/>
-                            <constraint firstItem="Ajd-gs-tNE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="5IH-Je-DOR"/>
-                            <constraint firstItem="lR5-6F-OD2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="142" id="OSo-X5-1da"/>
-                            <constraint firstItem="Uoi-i4-rMP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="OfY-CC-yAe"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Uoi-i4-rMP" secondAttribute="trailing" constant="16" id="P5p-xf-JOk"/>
-                            <constraint firstItem="Uoi-i4-rMP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="T0h-s0-tFn"/>
-                            <constraint firstItem="DgC-MH-kad" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="TnA-pV-L4X"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ajd-gs-tNE" secondAttribute="trailing" constant="16" id="VJb-Om-5OX"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="lR5-6F-OD2" secondAttribute="bottom" constant="172" id="ZXr-EL-iZM"/>
-                            <constraint firstItem="lR5-6F-OD2" firstAttribute="top" secondItem="Ajd-gs-tNE" secondAttribute="bottom" constant="89.5" id="d4x-Ua-B4H"/>
-                            <constraint firstItem="DgC-MH-kad" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="djc-5R-OND"/>
-                            <constraint firstItem="DgC-MH-kad" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="odR-AR-YGS"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lR5-6F-OD2" secondAttribute="trailing" constant="143" id="uci-Tc-FAS"/>
-                            <constraint firstItem="Ajd-gs-tNE" firstAttribute="top" secondItem="Uoi-i4-rMP" secondAttribute="bottom" constant="6" id="y8V-33-8X5"/>
+                            <constraint firstItem="Ajd-gs-tNE" firstAttribute="top" secondItem="Uoi-i4-rMP" secondAttribute="bottom" constant="8" id="60S-Hz-9Hj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lR5-6F-OD2" secondAttribute="trailing" constant="143" id="Cbi-TB-HbC"/>
+                            <constraint firstItem="lR5-6F-OD2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="142" id="FIq-PH-ML1"/>
+                            <constraint firstItem="Uoi-i4-rMP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="KU7-wP-v77"/>
+                            <constraint firstItem="lR5-6F-OD2" firstAttribute="top" secondItem="Ajd-gs-tNE" secondAttribute="bottom" constant="7.5" id="ORc-Gc-VTi"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Uoi-i4-rMP" secondAttribute="trailing" constant="16" id="UpV-X4-bKP"/>
+                            <constraint firstItem="Ajd-gs-tNE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="gUH-Zq-7pk"/>
+                            <constraint firstItem="Uoi-i4-rMP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="khv-hi-kXn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ajd-gs-tNE" secondAttribute="trailing" constant="16" id="pWd-WC-2dv"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
