@@ -10,11 +10,12 @@ class ViewController: UIViewController, AnimateImages {
         super.viewDidLoad()
         broImageView.layer.cornerRadius = 10
         broButton.layer.cornerRadius = 10
+        //broLabel.text = animate(imageView: broImageView)
         animate(imageView: broImageView)
     }
     
     @IBAction func clickMeBro(_ sender: Any) {
-        startAndStopAnimation(view: broImageView)
+        startAndStopAnimation(imageView: broImageView)
     }
 }
 

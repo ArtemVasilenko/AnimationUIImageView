@@ -2,7 +2,7 @@ import Foundation
 import UIKit
 
 private struct ImageArray {
-    static var arrayImages: [UIImage] = [#imageLiteral(resourceName: "1"), #imageLiteral(resourceName: "2"), #imageLiteral(resourceName: "3"), #imageLiteral(resourceName: "4")]
+    //static var arrayImages: [UIImage] = [#imageLiteral(resourceName: "1"), #imageLiteral(resourceName: "2"), #imageLiteral(resourceName: "3"), #imageLiteral(resourceName: "4")]
     static var newArrayImages = [UIImage] ()
     static var image = ["1", "2", "3", "4"]
 }
@@ -12,9 +12,8 @@ private struct Status {
 }
 
 protocol AnimateImages {
-    //func addImageToArray(imageName: String) -> [UIImage]
     func animate(imageView: UIImageView)
-    func startAndStopAnimation(view: UIImageView)
+    func startAndStopAnimation(imageView: UIImageView)
 }
 
 extension AnimateImages {
@@ -27,18 +26,18 @@ extension AnimateImages {
         return arr
     }
     
-    func animate(imageView: UIImageView) {
-    
-        imageView.animationImages = addImageToArray(imageName: ImageArray.image)
+   func animate(imageView: UIImageView) {
+    imageView.animationImages = addImageToArray(imageName: ImageArray.image)
         imageView.animationDuration = 10
+    
     }
     
-    func startAndStopAnimation(view: UIImageView) {
+    func startAndStopAnimation(imageView: UIImageView) {
         if Status.status == false {
-            view.startAnimating()
+            imageView.startAnimating()
             Status.status = true
         } else {
-            view.stopAnimating()
+            imageView.stopAnimating()
             Status.status = false
         }
     }
